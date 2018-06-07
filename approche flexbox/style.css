@@ -47,8 +47,8 @@ body {
 }
 
 .citybox__infos-title {
-        font-size: 3em;
-font-weight: bold;
+    font-size: 3em;
+    font-weight: bold;
 }
 
 .citybox__infos-assets {
@@ -58,15 +58,23 @@ font-weight: bold;
 .citybox__infos-assets ul {
     list-style: none;
     padding: 0;
-    margin: 16px 0px;
+    margin: 15px 0px;
     width: 306px;
     display: flex;
         flex-direction: row;
         justify-content: space-between;
+    
 }
 
-.citybox__infos-assets ul li:nth-child(2){
-    transform: translateY(-8px);
+.citybox__infos-assets ul li {
+    position: relative;
+}
+
+.citybox__infos-assets ul li:last-child::before{
+    content:'.';
+    position: absolute;
+        top: -8px;
+        left: -18px;
 }
 
 .citybox__icon{

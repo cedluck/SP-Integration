@@ -40,13 +40,13 @@ body {
 
 .citybox__infos ul li:first-child{
     position:absolute;
-        top: 146px;
+        top: 145px;
         left: 120px;
 }
 
 .citybox__infos ul li:last-child{
     position: absolute;
-        top:146px;
+        top:145px;
         right: 374px;
 }
 
