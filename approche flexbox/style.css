@@ -18,8 +18,11 @@ body {
     background: url("rectangle.png") no-repeat;
     width: 800px;
     height: 600px;
+    padding: 40px 80px;
+    box-sizing: border-box;
     position: relative;
     color: #ffffff;
+    font-size: 2em;
     display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -28,53 +31,42 @@ body {
 /* city box */
 .citybox {
     z-index: 1;
-    width: 560px;
-    height: 112px;
-    margin: 40px 80px;
+    width: 640px;
+    height: 176px;
     padding: 32px 40px;
+    box-sizing: border-box;
     display: flex;
         flex-direction: row;
         justify-content: space-between;
 }
 
 .citybox__infos {
-    margin: 0;
-    padding: 0;
-    font-size: 2em;
     display: flex;
         flex-direction: column;
-        justify-content: space-between;
 }
 
 .citybox__infos-title {
-    font-size: 3em;
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-.citybox__infos-assets {
-    font-size: 2em;
-}
 
 .citybox__infos-assets ul {
     list-style: none;
     padding: 0;
-    margin: 15px 0px;
     width: 306px;
+    margin-top: 18px;
     display: flex;
         flex-direction: row;
-        justify-content: space-between;
-    
-}
-
-.citybox__infos-assets ul li {
-    position: relative;
+        justify-content: space-between;    
 }
 
 .citybox__infos-assets ul li:last-child::before{
     content:'.';
-    position: absolute;
-        top: -8px;
-        left: -18px;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin-right: 10px;
+
 }
 
 .citybox__icon{
@@ -93,7 +85,6 @@ body {
 
 /* Button */
 .button {
-    margin: 40px 80px;
     align-self: flex-end;
     width: 337px;
     height: 77px;
@@ -101,19 +92,16 @@ body {
     background-blend-mode: multiply;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(6, 124, 250, 0.7));
     border: solid 2px #ffffff;
+    display: flex;
 }
 
-.button ul li {
-    margin:0;
-    font-size: 2em;
+.button__text {
+    font-weight: lighter;
+    margin: auto 0px auto 32px;
     color: #ffffff;
-    list-style: none;
 }
 
-.button ul li::after {
-    content: '\f105';
-    font-family: 'Font Awesome 5 Free';
-    font-weight: 600;
-    margin-left: 37px;
+[data="angle-right.svg"] {
+    margin: auto 31px;
 }
 
