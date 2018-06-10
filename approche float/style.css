@@ -7,7 +7,6 @@
           url('Fonts/Lato-Regular.woff2') format('woff2');
 }
 
-
 body {
     margin: 0;
     padding: 0;
@@ -17,8 +16,9 @@ body {
 /* BackGround image */
 #bg-image {
   background: url("rectangle.png") no-repeat;
-  width: 640px;
-  height: 520px;
+  width: 800px;
+  height: 600px;
+  box-sizing: border-box;
   color: #ffffff;
   padding: 40px 80px;
   position: relative;
@@ -27,8 +27,9 @@ body {
 
 /* city box */
 .citybox {
-  width: 560px;
-  height: 112px;
+  width: 640px;
+  height: 176px;
+  box-sizing: border-box;
   padding: 32px 40px;
 }
 
@@ -44,10 +45,8 @@ body {
 }
 
 .citybox__infos-assets {
-    margin-top: 15px;
+    margin-top: 16px;
     font-size: 2em;
-    width: 306px;
-
 }
 
 .citybox__infos-assets ul {
@@ -58,23 +57,18 @@ body {
 .citybox__infos-assets ul li {
     display: inline-block;
     list-style: none;
-    position: relative;
-}
-
-.citybox__infos-assets ul li:last-child {
-    margin-left: calc(103px/5);
 }
 
 .citybox__infos-assets ul li:last-child::before{
     content:'.';
-    position: absolute;
-        top:-8px;
-        left: -18px;
+    display: inline-block;
+    transform: translateY(-8px);
+    margin-right: 10px;
 }
 
 .citybox__icon{
   float: right;
-  margin: 24px 18px 18px;
+  margin: 18px;
 }
 
 /* box background */
@@ -99,17 +93,14 @@ body {
   border: solid 2px #ffffff;
 }
 
-.button ul li {
-  margin:0;
+.button__text{
   font-size: 2em;
   color: #ffffff;
-  list-style: none;
+  margin: 18px 32px;
 }
 
-.button ul li::after {
-   content: '\f105';
-   font-family: 'Font Awesome 5 Free';
-   font-weight: 600;
-   margin-left: 37px;
-}
+[data="angle-right.svg"] {
+  float: right;
+  margin: 28px 31px;
 
+}

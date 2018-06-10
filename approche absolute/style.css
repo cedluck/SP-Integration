@@ -76,18 +76,20 @@ body {
     border: solid 2px #ffffff;
 }
 
-.button ul li{
+.button__text{
+    position:absolute;
+        top:18px;
+        left: 32px;
     margin:0;
-    font-size: 32px;
+    font-size: 2em;
     color: #ffffff;
-    display:inline;
-    list-style-type: none;
+
 }
 
-.button ul li::after {
-      content: '\f105';
-      font-family: 'Font Awesome 5 Free';
-      font-weight: 600;
-      margin-left: 37px;
+[data="angle-right.svg"] {
+   position:absolute;
+        top:29px;
+        right: 31px;
 }
+
 
